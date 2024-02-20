@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfAppAuthorization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAuthorization"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="600" Width="800">
+    <Grid>
+        <!-- grid размечается на строки и столбцы-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical">
+            <TextBlock Text="Добро пожаловать в программу"
+                       FontSize="20" FontFamily="Arial"
+                       TextAlignment="Center"
+                       Height="70"/>
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal" 
+                        >
+                <TextBlock Text="Логин" Width="100" Margin="5"
+                           FontSize="16" FontFamily="Arial"/>
+                <TextBox Name="txtLogin" Width="100" Margin="5"
+                         FontSize="16" FontFamily="Arial"/>
+            </StackPanel>
+            
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <TextBlock Text="Пароль" Width="100" Margin="5"
+                           FontSize="16" FontFamily="Arial"/>
+                <PasswordBox Name="psbPassword" Width="100" Margin="5"
+                             FontSize="16" FontFamily="Arial"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button Height="30" Width="100" Margin="5"
+                        Name="btnEnter" Content="Войти"
+                        FontSize="14" FontFamily="Arial"
+                        Click="btnEnter_Click"/>
+                <Button Height="30" Width="100" Margin="5"
+                        Name="btnRegistration" Content="Регистрация"
+                        FontSize="14" FontFamily="Arial"/>
+                <Button Height="30" Width="110" Margin="5"
+                        FontSize="14" FontFamily="Arial"
+                        Name="btnForgetPassword" Content="Забыли пароль"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
