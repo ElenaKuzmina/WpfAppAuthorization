@@ -57,5 +57,17 @@ namespace WpfAppAuthorization
                 MessageBox.Show("Неверный логин");
             }
         }
+
+        private void btnForgetPassword_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRegistration_Click(object sender, RoutedEventArgs e)
+        {
+            WindowRegistration windowRegistration = new WindowRegistration();
+            windowRegistration.Show();
+            Close();
+        }
     }
 }
