@@ -23,6 +23,7 @@ namespace WpfAppAuthorization
         public MainWindow()
         {
             InitializeComponent();
+            //comment
         }
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
