@@ -44,16 +44,12 @@
 
             <StackPanel HorizontalAlignment="Center"
                         Orientation="Horizontal">
-                <Button Height="30" Width="100" Margin="5"
-                        Name="btnEnter" Content="Войти"
-                        FontSize="14" FontFamily="Arial"
+                <Button Name="btnEnter" Content="Войти"
                         Click="btnEnter_Click"/>
-                <Button Height="30" Width="100" Margin="5"
+                <Button 
                         Name="btnRegistration" Content="Регистрация"
-                        FontSize="14" FontFamily="Arial"
                         Click="btnRegistration_Click"/>
-                <Button Height="30" Width="110" Margin="5"
-                        FontSize="14" FontFamily="Arial"
+                <Button                      
                         Name="btnForgetPassword" Content="Забыли пароль"
                         Click="btnForgetPassword_Click"/>
             </StackPanel>

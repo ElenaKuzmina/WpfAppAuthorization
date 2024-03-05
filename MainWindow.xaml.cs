@@ -46,6 +46,9 @@ namespace WpfAppAuthorization
                     if (password.ToLower() == "123") 
                         {
                             MessageBox.Show("Вы авторизованы успешно");
+                            WindowPracticalWork5 practicalWork5 = new WindowPracticalWork5();   
+                            practicalWork5.ShowDialog();
+                            //Close();
                         }
                     else 
                         {

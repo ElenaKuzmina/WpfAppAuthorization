@@ -52,9 +52,7 @@
             <StackPanel HorizontalAlignment="Center"
                         Orientation="Horizontal">
                 
-                <Button Height="30" Width="100" Margin="5"
-                        Name="btnRegistration" Content="Регистрация"
-                        FontSize="14" FontFamily="Arial"
+                <Button Name="btnRegistration" Content="Регистрация"
                         Click="btnRegistration_Click"/>
                
             </StackPanel>

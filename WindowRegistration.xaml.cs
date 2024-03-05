@@ -26,6 +26,7 @@ namespace WpfAppAuthorization
 
         private void btnRegistration_Click(object sender, RoutedEventArgs e)
         {
+            //тут будет алгоритм регистрации
             MessageBox.Show("Регистрация успешная\nВернитесь в окно авторизации");
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();

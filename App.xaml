@@ -4,6 +4,28 @@
              xmlns:local="clr-namespace:WpfAppAuthorization"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button"> <!--Стиль кнопок-->
+            <Style.Setters>
+                
+                <Setter Property="Height" Value="30" />
+                <Setter Property="Width" Value="120" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="Background" Value="LightSkyBlue"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="Foreground" Value="Red" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="buttonRun">
+            <Setter Property="Button.Height" Value="30" />
+            <Setter Property="Button.FontSize" Value="18"/>
+            <Setter Property="Button.FontFamily" Value="Calibry"/>
+            <Setter Property="Button.Background" Value="Orange"/>
+        </Style>
     </Application.Resources>
 </Application>
